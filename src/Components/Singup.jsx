@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import Dashboard from './Dashboard'
+import React from 'react'
 export default function SignUp(){
 
     return (
