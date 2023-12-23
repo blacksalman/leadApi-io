@@ -8,7 +8,7 @@ function Nav() {
         <div className='logo-header'>
           <h1 className='logo'>LeadApi.io</h1>
         </div>
-        <div className='nav-link'>
+        <div className='nav-link top-nav'>
           <a href="/" className='home-link'>Home</a>
           <a href="/" className='login-link'>Login</a>
           {
