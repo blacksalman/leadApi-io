@@ -175,3 +175,19 @@
     } 
 
 }
+
+@media screen and (min-width: 431px) and (max-width: 1024px ) {
+    .innerImage-section {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .inner-supercharge {
+        width: 80%;
+    }
+}
