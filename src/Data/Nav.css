@@ -1,0 +1,53 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: radial-gradient(39.38% 39.33% at 50.97% -5.49%, #3E3E3E 0%, #000 100%); */
+}
+
+.logo-header {
+    width: 30%;
+}
+
+.logo {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-link a {
+    text-decoration: none;
+}
+
+.home-link {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login-link {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.signup-link {
+    color: #599CFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

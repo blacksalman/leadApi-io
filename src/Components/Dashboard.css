@@ -1,0 +1,104 @@
+.dashboard-container {
+    display: flex;
+    background: #14151E;
+}
+
+.left-col {
+    width: 322px;
+    height: 100vh;
+    background: #010409;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-col {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.heading-names {
+    height: 288px;
+    margin-bottom: 196px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.heading {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.footer-heading {
+    height: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-section { 
+    color: white;
+    margin-top: 4.6vh;
+    width: 459px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+.inner-para {
+    color: #599CFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input::-webkit-input-placeholder{
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.input-section {
+    width: 308px;
+    height: 35px;
+    border-radius: 9px;
+    background: rgba(217, 217, 217, 0.20);
+    border: none;
+}
+
+@media screen and (max-width: 684px) and (max-height: 836px) {
+    .heading {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 720px) and (max-height: 900px) {
+    .main-section {
+        margin-top: 4.6vh;
+        width: 459px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}

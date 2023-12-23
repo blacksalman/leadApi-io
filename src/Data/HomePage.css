@@ -1,0 +1,102 @@
+.home-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 49px;
+    padding-bottom: 30px;
+    background: radial-gradient(39.38% 39.33% at 50.97% -5.49%, #3E3E3E 0%, #000 100%);
+}
+
+.home-container {
+    background: #000;
+}
+
+.signup-free {
+    margin-top: 20px;
+    border-radius: 11px;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    background: radial-gradient(39.38% 39.33% at 50.97% -5.49%, #3E3E3E 0%, #000 100%);
+    box-shadow: 1px 12px 16px 2px rgba(255, 255, 255, 0.11);
+    color: white;
+    width: 196px;
+    height: 53px;
+}
+
+.images-section {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.innerImage-section {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(20, 21, 30, 0.63);
+    height: 169px;
+    border-radius: 20px;
+    flex-direction: row;
+}
+
+.inner-card-section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 115px;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Space Grotesk';
+
+
+}
+.card .data-content {
+    border-radius: "20px";
+    background: 'rgba(217, 217, 217, 0.09)';
+    backdrop-filter: 'blur(42px)';
+    height: "259px";
+    display:'flex';
+    align-items: "center";
+    width: "409px";
+    justify-content: "center";
+    padding-left: "10px";
+}
+
+.supercharge {
+    margin-top: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inner-supercharge {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+    width: 50%;
+    height: 168px;
+    border-top: 2px solid #726565;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .footer-heading {
+    margin-top: 25px;
+    margin-bottom: 19px;
+} */

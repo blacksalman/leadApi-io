@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+import Dashboard from './Components/Dashboard'
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './Data/HomePage'
+import SignUp from './Components/Singup'
+import Login from './Components/Login'
+import ResetPassword from './Components/ResetPassword'
+import Nav from './Components/Nav'
 function App() {
+  const pathName = window.location.href
+  const pathLocationName = ['home', 'login', 'signup', 'reset-password']
+  const hostName = pathLocationName.some(urlData => pathName.includes(urlData))
+  console.log('hostname', hostName);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      {
+        !(pathName.includes('dashboard') || pathName.includes('home')) &&
+          <div className="App">
+            <Nav/>
+            <div className="auth-wrapper">
+              <div className="auth-inner">
+                <Routes>
+                  <Route exact path="/" element={<SignUp />} />
+                  <Route exact path="/login" element={<Login />} />
+                  <Route exact path="/reset-password" element={<ResetPassword />} />
+                </Routes>
+              </div>
+            </div>
+          </div>
+      }
 
-export default App;
+      <Routes>
+
+        <Route exact path="/dashboard" element={<Dashboard />} />
+        
+        <Route exact path="/home" element={<HomePage />} />
+      </Routes>
+    </>
+
+  )
+}
+export default App
