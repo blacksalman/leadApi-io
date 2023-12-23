@@ -24,7 +24,7 @@ function HomePage() {
         </div>
     </div>
         <div>
-            <div style={{paddingTop: '30px'}}>
+            <div style={{paddingTop: '30px'}} className='into-section'>
                 <h1 style={{color: '#FFF', display: 'flex', justifyContent: 'center'}}>
                     Lead Generation API’s to supercharge
                 </h1>
@@ -38,15 +38,15 @@ function HomePage() {
             </div>
             <div className='images-section'>
                 <div className='innerImage-section'>
-                    <div>
+                    <div className='img-col'>
                        <img src={ImageOne} alt='img-1'/>
                        <h4 style={{color: '#FFF'}}>Live Email Validation <br/> & Verification</h4>
                     </div>
-                    <div>
+                    <div className='img-col'>
                        <img src={ImageTwo} alt='img-2'/>
                        <h4 style={{color: '#FFF'}}>13,458,254+ <br/> Company  Data</h4>
                     </div>
-                    <div>
+                    <div className='img-col'>
                        <img src={ImageThree} alt='img-3'/>
                        <h4 style={{color: '#FFF'}}>132,524,674+ <br/> Emails</h4>
                     </div>
@@ -73,7 +73,7 @@ function HomePage() {
                           <DataComponents/>
                         </div>
                     </div>
-                    <div className='inner-card-section'>
+                    <div className='inner-card-section second-card-section'>
                         <h1 style={{color: '#FFF'}}>Live Email Finder API</h1>
                         <p style={{color: '#599CFF',fontFamily: 'Inter'}}>Find anyone’s professional email with from<br/>
                           their name and company domain.</p>
@@ -99,7 +99,7 @@ function HomePage() {
 
             <div className='supercharge'>
                 <div className='inner-supercharge'>
-                    <div>
+                    <div className='supercharge-descp'>
                         <div style=
                            {{
                                 display: "flex",
@@ -122,7 +122,7 @@ function HomePage() {
 
         <div style={{display: 'flex', justifyContent: "center"}}>
             <div className='footer'>
-                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around',paddingTop: '25px'}}>
+                <div className='footer-conainer' style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around',paddingTop: '25px'}}>
                     <div className='logo-header'>
                         <h1 className='logo'>LeadApi.io</h1>
                     </div>
