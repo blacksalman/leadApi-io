@@ -9,12 +9,12 @@ function Nav() {
           <h1 className='logo'>LeadApi.io</h1>
         </div>
         <div className='nav-link'>
-          <a href="#" className='home-link'>Home</a>
-          <a href="#" className='login-link'>Login</a>
+          <a href="/" className='home-link'>Home</a>
+          <a href="/" className='login-link'>Login</a>
           {
-            pathName.includes('home') && <a href="#" className='login-link'>Login</a>
+            pathName.includes('home') && <a href="/" className='login-link'>Api</a>
           }
-          <a href="#" className='signup-link'>Signup</a>
+          <a href="/" className='signup-link'>Signup</a>
         </div>
     </div>
   )
