@@ -7,36 +7,26 @@ import HomePage from './Data/HomePage'
 import SignUp from './Components/Singup'
 import Login from './Components/Login'
 import ResetPassword from './Components/ResetPassword'
-import Nav from './Components/Nav'
+import Error from './Components/Error'
 function App() {
   const pathName = window.location.href
-  const pathLocationName = ['home', 'login', 'signup', 'reset-password']
-  const hostName = pathLocationName.some(urlData => pathName.includes(urlData))
-  console.log('hostname', hostName);
+  const location = ['login', 'signup', 'reset-password', 'dashboard'];
+  const url = location.some(urlData => pathName.includes(urlData))
   return (
     <>
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/home" element={<HomePage />} />
+        <Route exact path="/signup" element={<SignUp />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/reset-password" element={<ResetPassword />} /> 
+        <Route exact path="/dashboard" element={<Dashboard />} />
+      </Routes>
+
       {
-        !(pathName.includes('dashboard') || pathName.includes('home')) &&
-          <div className="App">
-            <Nav/>
-            <div className="auth-wrapper">
-              <div className="auth-inner">
-                <Routes>
-                  <Route exact path="/" element={<SignUp />} />
-                  <Route exact path="/login" element={<Login />} />
-                  <Route exact path="/reset-password" element={<ResetPassword />} />
-                </Routes>
-              </div>
-            </div>
-          </div>
+        !url && <Error/>
       }
 
-      <Routes>
-
-        <Route exact path="/dashboard" element={<Dashboard />} />
-        
-        <Route exact path="/home" element={<HomePage />} />
-      </Routes>
     </>
 
   )

@@ -45,6 +45,14 @@
     font-weight: 400;
     line-height: normal;
 }
+.api-link {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 .signup-link {
     color: #599CFF;
     font-family: Inter;

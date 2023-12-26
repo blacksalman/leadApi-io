@@ -4,9 +4,15 @@ import ImageOne from '../images/image-1.png'
 import ImageTwo from '../images/image-2.png'
 import ImageThree from '../images/image-3.png'
 import DataComponents from './DataComponents'
-
+import { Link } from 'react-router-dom'
+ 
 function HomePage() {
-    const pathName = window.location.href
+    const handleApiClick = () => {
+        window.scrollTo({
+            top: 730,
+            behavior: "smooth"
+        })
+    }
   return (
     <div className='home-container'>
 
@@ -15,16 +21,14 @@ function HomePage() {
             <h1 className='logo'>LeadApi.io</h1>
         </div>
         <div className='nav-link'>
-          <a href="/" className='home-link'>Home</a>
-          <a href="/" className='login-link'>Login</a>
-          {
-            pathName.includes('home') && <a href="/" className='login-link'>Api</a>
-          }
-          <a href="/" className='signup-link'>Signup</a>
+          <Link to="/" className='home-link'>Home</Link>
+          <Link to="/login" className='login-link'>Login</Link>
+          <a href='/#' smooth={true} className='api-link' onClick={handleApiClick}>Api</a>
+          <Link to="/signup" className='signup-link'>Signup</Link>
         </div>
     </div>
-        <div>
-            <div style={{paddingTop: '30px'}} className='into-section'>
+        <div id='card'>
+            <div style={{paddingTop: '150px'}} className='into-section'>
                 <h1 className='home-intro'>
                     Lead Generation API’s to supercharge
                 </h1>
@@ -97,6 +101,7 @@ function HomePage() {
                 </div>
             </div>
 
+
             <div className='supercharge'>
                 <div className='inner-supercharge'>
                     <div className='supercharge-descp'>
@@ -126,11 +131,11 @@ function HomePage() {
                     <div className='logo-header'>
                         <h1 className='logo'>LeadApi.io</h1>
                     </div>
-                        <div className='nav-link'>
-                        <a href="/" className='home-link'>Home</a>
-                        <a href='/login' className='login-link'>Login</a>
-                        <a href='/api' className='home-link'>Api</a>
-                        <a href="/resetpassword" className='signup-link'>Signup</a>
+                    <div className='nav-link'>
+                        <Link to="/" className='home-link'>Home</Link>
+                        <Link to="/login" className='login-link'>Login</Link>
+                        <a href='/#' smooth={true} className='api-link' onClick={handleApiClick}>Api</a>
+                        <Link to="/signup" className='signup-link'>Signup</Link>
                     </div>
                 </div>
                 <div>
