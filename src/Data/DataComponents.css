@@ -8,3 +8,12 @@
     font-family: "Inter";
     font-size: 15px;
 }
+
+
+@media screen and (min-width: 375px) and (max-width: 430px) {
+    .value {
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
