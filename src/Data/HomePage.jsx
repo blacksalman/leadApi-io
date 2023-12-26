@@ -31,7 +31,7 @@ function HomePage() {
                 <h1 className='home-intro'>
                    your B2B SaaS & Projects.
                 </h1>
-                <p style={{color: "#599CFF", display: "flex", justifyContent: 'center'}}>100% Free Access to All API’s</p>
+                <p className='home-intro-para'>100% Free Access to All API’s</p>
                 <div style={{ display: "flex", justifyContent: 'center'}}>
                     <button className='signup-free'>Signup for Free</button>
                 </div>
@@ -55,8 +55,8 @@ function HomePage() {
             <div className='card-section' style={{marginTop: "100px"}}>
                 <div className='card'>
                     <div className='inner-card-section'>
-                        <h1 style={{color: '#FFF'}}>Live Email Verify API</h1>
-                        <p style={{color: '#599CFF',fontFamily: 'Inter'}}>Find if email is valid, deliverable,<br/>
+                        <h1 className="data-heading">Live Email Verify API</h1>
+                        <p className="data-heading-para">Find if email is valid, deliverable,<br/>
                         full inbox or disposable etc.</p>
                     </div>
                     <div style={{borderRadius: "20px", background: 'rgba(217, 217, 217, 0.09)', backdropFilter: 'blur(42px)', height: "259px", display:'flex' ,alignItems: "center",width: "409px",justifyContent: "center", paddingLeft: "10px"}}>
@@ -74,8 +74,8 @@ function HomePage() {
                         </div>
                     </div>
                     <div className='inner-card-section second-card-section'>
-                        <h1 style={{color: '#FFF'}}>Live Email Finder API</h1>
-                        <p style={{color: '#599CFF',fontFamily: 'Inter'}}>Find anyone’s professional email with from<br/>
+                        <h1 className="data-heading">Live Email Finder API</h1>
+                        <p className="data-heading-para">Find anyone’s professional email with from<br/>
                           their name and company domain.</p>
                     </div>
                 </div>
@@ -85,8 +85,8 @@ function HomePage() {
                 <div className='card'>
                     
                     <div className='inner-card-section'>
-                        <h1 style={{color: '#FFF'}}>Website to Email API</h1>
-                        <p style={{color: '#599CFF',fontFamily: 'Inter'}}>Find anyone’s professional email with from<br/>
+                        <h1 className="data-heading">Website to Email API</h1>
+                        <p className="data-heading-para">Find anyone’s professional email with from<br/>
                             their name and company domain.</p>
                     </div>
                     <div style={{borderRadius: "20px", background: 'rgba(217, 217, 217, 0.09)', backdropFilter: 'blur(42px)', height: "259px", display:'flex' ,alignItems: "center",width: "409px",justifyContent: "center", paddingLeft: "10px"}}>
@@ -108,10 +108,10 @@ function HomePage() {
                                 fontFamily: 'Space Grotesk',
                                 lineHeight: 'normal'
                             }}>
-                            <h1 style={{margin: "0px", color: '#FFF'}}>Supercharge your Lead Generation SaaS</h1>
-                            <h1 style={{color: '#FFF'}}>with our robusts API’s.</h1>
+                            <h1 className='supercharge-heading'>Supercharge your Lead Generation SaaS</h1>
+                            <h1 className='supercharge-heading'>with our robusts API’s.</h1>
                         </div>
-                        <p style={{display: 'flex', justifyContent:'flex-start', color: '#599CFF'}}>100% Free Access to All API’s</p>
+                        <p className="super-charge-para">100% Free Access to All API’s</p>
                     </div>
                     <div>
                         <button className='signup-free'>Signup for free</button>
