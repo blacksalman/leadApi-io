@@ -10,6 +10,18 @@
     background: #000;
 }
 
+.home-intro{
+    color: #FFF;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+
 .signup-free {
     margin-top: 20px;
     border-radius: 11px;
@@ -31,6 +43,16 @@
     width: 50%;
     display: flex;
     justify-content: space-between;
+}
+
+.img-heading {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Space Grotesk';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .card-section {

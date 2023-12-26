@@ -25,10 +25,10 @@ function HomePage() {
     </div>
         <div>
             <div style={{paddingTop: '30px'}} className='into-section'>
-                <h1 style={{color: '#FFF', display: 'flex', justifyContent: 'center'}}>
+                <h1 className='home-intro'>
                     Lead Generation API’s to supercharge
                 </h1>
-                <h1 style={{color: '#FFF', display: 'flex', justifyContent: 'center'}}>
+                <h1 className='home-intro'>
                    your B2B SaaS & Projects.
                 </h1>
                 <p style={{color: "#599CFF", display: "flex", justifyContent: 'center'}}>100% Free Access to All API’s</p>
@@ -40,15 +40,15 @@ function HomePage() {
                 <div className='innerImage-section'>
                     <div className='img-col'>
                        <img src={ImageOne} alt='img-1'/>
-                       <h4 style={{color: '#FFF'}}>Live Email Validation <br/> & Verification</h4>
+                       <h4 className="img-heading">Live Email Validation <br/> & Verification</h4>
                     </div>
                     <div className='img-col'>
                        <img src={ImageTwo} alt='img-2'/>
-                       <h4 style={{color: '#FFF'}}>13,458,254+ <br/> Company  Data</h4>
+                       <h4 className="img-heading">13,458,254+ <br/> Company  Data</h4>
                     </div>
                     <div className='img-col'>
                        <img src={ImageThree} alt='img-3'/>
-                       <h4 style={{color: '#FFF'}}>132,524,674+ <br/> Emails</h4>
+                       <h4 className="img-heading">132,524,674+ <br/> Emails</h4>
                     </div>
                 </div>
             </div>
