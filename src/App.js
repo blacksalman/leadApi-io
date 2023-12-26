@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import Dashboard from './Components/Dashboard'
@@ -8,12 +8,23 @@ import SignUp from './Components/Singup'
 import Login from './Components/Login'
 import ResetPassword from './Components/ResetPassword'
 import Error from './Components/Error'
+import { useLocation } from 'react-router-dom'
 function App() {
-  const pathName = window.location.href
-  const location = ['login', 'signup', 'reset-password', 'dashboard'];
-  const url = location.some(urlData => pathName.includes(urlData))
+  const location = useLocation();
+  const hostPathName = window.location.pathname;
+  const [hostUrl, setHostUrl] = useState(hostPathName)
+  const urlLocation = ['login', 'signup', 'reset-password', 'dashboard', 'home'];
+
+  useEffect(()=>{
+    const url = urlLocation.some(urlData => (location.pathname.includes(urlData) || location.pathname === '/'))
+    setHostUrl(url)
+  }, [location])
+
   return (
     <>
+      {
+        !hostUrl && <Error/>
+      }
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/home" element={<HomePage />} />
@@ -22,10 +33,6 @@ function App() {
         <Route exact path="/reset-password" element={<ResetPassword />} /> 
         <Route exact path="/dashboard" element={<Dashboard />} />
       </Routes>
-
-      {
-        !url && <Error/>
-      }
 
     </>
 

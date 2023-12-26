@@ -204,12 +204,28 @@
         flex-direction: column;
     }
 
+    .card-section {
+        padding-top: 120px;
+    }
+
+    .card-section.second-card-section {
+        margin-top: 85px;
+    }
+
     .inner-card-section {
-        padding-bottom: 20px;
+        padding-bottom: 70px
     }
 
     .inner-card-section.second-card-section{
         padding-top: 36px;
+    }
+
+    .data-heading {
+        font-size: 30px;
+    }
+
+    .data-heading-para {
+        padding-bottom: 5px;
     }
 
     .inner-supercharge {
