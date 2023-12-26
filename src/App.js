@@ -18,6 +18,8 @@ function App() {
   useEffect(()=>{
     const url = urlLocation.some(urlData => (location.pathname.includes(urlData) || location.pathname === '/'))
     setHostUrl(url)
+    
+    // eslint-disable-next-line 
   }, [location])
 
   return (

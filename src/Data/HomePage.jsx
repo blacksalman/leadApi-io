@@ -56,7 +56,7 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            <div className='card-section' style={{marginTop: "100px"}}>
+            <div className='card-section first-card'>
                 <div className='card'>
                     <div className='inner-card-section'>
                         <h1 className="data-heading">Live Email Verify API</h1>
@@ -70,7 +70,7 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            <div className='card-section second-section' style={{marginTop: "185px"}}>
+            <div className='card-section second-section'>
                 <div className='card'>
                     <div style={{borderRadius: "20px", background: 'rgba(217, 217, 217, 0.09)', backdropFilter: 'blur(42px)', height: "259px", display:'flex' ,alignItems: "center",width: "409px",justifyContent: "center",paddingLeft: "10px"}}>
                         <div>
@@ -85,7 +85,7 @@ function HomePage() {
                 </div>
             </div>
 
-            <div className='card-section' style={{marginTop: "185px"}}>
+            <div className='card-section'>
                 <div className='card'>
                     
                     <div className='inner-card-section'>
